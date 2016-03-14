@@ -31,7 +31,7 @@ If you want to change the colors, add the following options to your `config.fish
 ```fish
 set -g lv_standout --background=black 93a1a1
 set -g lv_reverse --background=black 93a1a1
-set -g lv_blink red --bold red
+set -g lv_blink --bold red
 set -g lv_underline --underline 93a1a1
 set -g lv_hilight --bold green
 ```
