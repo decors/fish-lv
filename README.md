@@ -13,7 +13,7 @@ fisher install decors/fish-lv
 [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
 
 ```fish
-fisher install https://github.com/decors/fish-lv
+omf install https://github.com/decors/fish-lv
 ```
 
 ## Usage
