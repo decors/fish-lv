@@ -1,8 +1,8 @@
 function __lv_convert
-    set_color $argv | cat -e | sed -e 's/^^\[\[//g' -e 's/m$//g' -e 's/m^\[\[/;/g'
+    builtin set_color $argv | command cat -e | command sed -e 's/^^\[\[//g' -e 's/m$//g' -e 's/m^\[\[/;/g'
 end
 
-set -q lv_standout; and set __standout (__lv_convert $lv_standout); or set __standout (__lv_convert 949494) 
+set -q lv_standout; and set __standout (__lv_convert $lv_standout); or set __standout (__lv_convert 949494)
 set -q lv_reverse; and set __reverse (__lv_convert $lv_reverse); or set __reverse (__lv_convert 949494)
 set -q lv_blink; and set __blink (__lv_convert $lv_blink); or set __blink (__lv_convert -o red)
 set -q lv_underline; and set __underline (__lv_convert $lv_underline); or set __underline (__lv_convert -u)
